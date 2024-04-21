@@ -42,12 +42,17 @@
 
     <section id="skills">
         <h2>Skills</h2>
-        <ul style="text-align: left;">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>...</li>
-        </ul>
+        <div style="text-align: left;">
+            <ul>
+        		<li class="skill-percentage">HTML & CSS</li>
+        		<li class="skill-percentage">Javascript</li>
+        		<li class="skill-percentage">Java</li>
+        		<li class="skill-percentage">Python</li>
+        		<li class="skill-percentage">Machine Learning</li>
+        		<li class="skill-percentage">Photoshop</li>
+            
+        	</ul>
+        </div>
     </section>
 
     <!-- <section id="works">
@@ -66,9 +71,7 @@
         <h2>Contact Me</h2>
         <form action="#" method="post">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" required><br><br><br><br>
+            <input type="text" id="name" name="name" required><br><br><br>
             <label for="message">Message:</label><br>
             <textarea id="message" name="message" rows="4" required></textarea><br>
             <input type="submit" onclick="sendmail()">
@@ -87,9 +90,9 @@
     <script>
         function sendmail(){
             var name = document.getElementById("name").value;
-            var email = document.getElementById("email").value;
             var message = document.getElementById("message").value;
-            window.open('mailto:avinashj40396701@gmail.com?subject=Cantacting Through Portfolio&body='+message+'.');
+            var body = "I'm "+name+"\n contacting rewarding "+message+"\n\n\nI will be Waiting for your Reply.";
+            window.open('mailto:avinashj40396701@gmail.com?subject=Cantacting Through Portfolio&body='+body);
             alert("Thank You for Contacting Me");
         }
     </script>
