@@ -71,7 +71,7 @@
             <input type="email" id="email" name="email" required><br><br><br><br>
             <label for="message">Message:</label><br>
             <textarea id="message" name="message" rows="4" required></textarea><br>
-            <input type="submit" value="Send">
+            <input type="submit" value="sendmail()">
             <br><br>
             <a href="https://www.instagram.com/avinash_jaganath?igsh=MW4zNnBrNHNjeXp5aA=="><img src="./image1.png" alt="insta" ></a>
             <a href="https://wa.me/919902736487"><img src="./image.png" alt="Whatsapp" ></a>
@@ -84,5 +84,14 @@
         <a href="https://wa.me/919902736487"><img src="./image.png" alt="Whatsapp" ></a>
         <a href="mailto:avinashj40396701@gmail.com"><img src="./gmail.jpg" alt="Gmail" ></a>
     </footer>
+    <script>
+        function sendmail(){
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+            window.open('mailto:avinashj40396701@gmail.com?subject=Cantacting Through Portfolio&body='+message+'\nThank You');
+            alert("Thank You for Contacting Me");
+        }
+    </script>
 </body>
 </html>
