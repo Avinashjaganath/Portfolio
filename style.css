@@ -47,19 +47,17 @@ section {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 5px;
+    text-align: right;
+    padding: 10px;
     position: fixed;
-    bottom: 0;
+    bottom: -10px;
     height: 50px;
-    width: 100%;
+    width: 95%;
 }
 footer a img{
     margin-left: 30px;
     height: 60%;
-    width: 30px;
+    width: 35px;
     border-radius: 50%;
 }
 #contact form a img{
@@ -67,6 +65,9 @@ footer a img{
     height: 60%;
     width: 30px;
     border-radius: 50%;
+}
+span{
+    background-color: aquamarine;
 }
 
 .parent {
@@ -99,7 +100,7 @@ footer a img{
     color: black;
     border-style:solid;
   }
-.skill-percentage {
+  .skill-percentage {
     margin-bottom:10px;
     position:relative;
     padding-top: 20px;
