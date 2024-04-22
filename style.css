@@ -2,6 +2,7 @@ body {
     font-family: cursive;
     margin: 0;
     padding: 0;
+    font-style:oblique;
 }
 header{
   position:fixed;
@@ -36,14 +37,18 @@ nav ul li a {
 }
 
 nav ul li a:hover{
-    color: #a33737;
-    text-decoration: none;
+    animation-fill-mode: backwards;
+    text-decoration:underline 20%; 
+
 }
 section {
     padding-top: 10%;
-    height: 600px;
+    height: 700px;
     text-align: center;
+    color: 0066FF;
     padding: 90px 20px;
+    border-color: black;
+    border-style:groove;
 }
 
 footer {
@@ -56,14 +61,14 @@ footer {
 }
 footer a img{
     margin-left: 30px;
-    height: 60%;
+    height: 35px;
     width: 35px;
     border-radius: 50%;
 }
 #contact form a img{
     margin-left: 30px;
-    height: 60%;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     border-radius: 50%;
 }
 span{
@@ -81,6 +86,7 @@ span{
     float: right;
     width: 30%; 
     display: inline-flex;
+    
 }
 .left{
     float: left;
@@ -100,3 +106,37 @@ span{
     color: black;
     border-style:solid;
   }
+  .skill-percentage {
+    margin-bottom:10px;
+    position:relative;
+    padding-top: 20px;
+    &::after {
+      content:"";
+      width:100%;
+      height:6px;
+      display:block;
+      margin-top:3px;
+    }
+    &::before{
+      content:"";
+      height:6px;
+      background: rgba(77, 218, 77, 0.76);
+      position:absolute;
+      margin-top:3px;
+      bottom:0;
+    }
+    &:nth-child(1)::before {width:80%;animation: skill_1 2s;}
+    &:nth-child(2)::before {width:70%; animation: skill_2 2s;} 
+    &:nth-child(3)::before {width:60%;animation: skill_3 2s;}
+    &:nth-child(4)::before {width:80%;animation: skill_4 2s;}
+    &:nth-child(5)::before {width:30%;animation: skill_5 2s;}
+    &:nth-child(6)::before {width:70%;animation: skill_6 2s;}
+    
+  }
+  
+@keyframes skill_1 {from {width:0%;}to {width:80%;}}
+@keyframes skill_2 {from {width:0%;}to {width:70%;}}
+@keyframes skill_3 {from {width:0%;}to {width:60%;}}
+@keyframes skill_4 {from {width:0%;}to {width:80%;}}
+@keyframes skill_5 {from {width:0%;}to {width:30%;}}  
+@keyframes skill_6 {from {width:0%;}to {width:70%;}}
