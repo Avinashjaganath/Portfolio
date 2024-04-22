@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./Style.css">
 </head>
 <body>
     <header>
@@ -55,18 +55,6 @@
         </div>
     </section>
 
-    <!-- <section id="works">
-        <h2>My Works</h2>
-        <div class="work">
-            <img src="work1.jpg" alt="Work 1">
-            <p>Description of work 1</p>
-        </div>
-        <div class="work">
-            <img src="work2.jpg" alt="Work 2">
-            <p>Description of work 2</p>
-        </div>
-    </section> -->
-
     <section id="contact" style="height: 400px;">
         <h2>Contact Me</h2>
         <form action="#" method="post">
@@ -91,7 +79,7 @@
         function sendmail(){
             var name = document.getElementById("name").value;
             var message = document.getElementById("message").value;
-            var body = "I'm "+name+", contacting rewarding "+message+". I will be Waiting for your Reply.";
+            var body = "I'm "+name+"\n contacting rewarding "+message+"\n\n\nI will be Waiting for your Reply";
             window.open('mailto:avinashj40396701@gmail.com?subject=Cantacting Through Portfolio&body='+body);
             alert("Thank You for Contacting Me");
         }
