@@ -11,6 +11,11 @@ header{
   align-items: right;
   justify-content:space-between;
 }
+@moblie only screen and(max-width:600px){
+    body{
+        background-color:#33333352;
+    }
+}
 header {
     background-color: #33333352;
     color: #fff;
