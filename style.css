@@ -11,8 +11,7 @@ header{
   align-items: right;
   justify-content:space-between;
 }
-@moblie only screen and(max-width:600px){
-    @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     nav .sideMenuButton {
         display: flex;
     }
@@ -25,6 +24,11 @@ header{
         display: block !important;
     }
 }
+nav .sideMenuButton {
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    display: none;
 }
 header {
     background-color: #33333352;
