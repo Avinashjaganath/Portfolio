@@ -12,9 +12,19 @@ header{
   justify-content:space-between;
 }
 @moblie only screen and(max-width:600px){
-    body{
-        background-color:#33333352;
+    @media screen and (max-width: 600px) {
+    nav .sideMenuButton {
+        display: flex;
     }
+
+    nav .navbar {
+        display: none;
+    }
+
+    .sideNavigationBar {
+        display: block !important;
+    }
+}
 }
 header {
     background-color: #33333352;
