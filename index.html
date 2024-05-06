@@ -8,9 +8,9 @@
 </head>
 <body>
     <header>
-        <h1 style="text-align: left;">Avinash J</h1>
+        <div class="heading">Avinash J</div>
         <nav>
-        <span class="sideMenuButton" 
+            <span class="sideMenuButton" 
             onclick="openNavbar()">
             &#9776
         </span>
@@ -24,13 +24,25 @@
                 <li><a href="./Avinash J.docx">Resume</a></li>
                 <li><a href="#contact">Contact Me</a></li>
             </ul>
-        </div>
-    </nav>
+        </div></nav>
+        <div class="sideNavigationBar" 
+        id="sideNavigationBar">
+        <a href="#" class="closeButton" 
+            onclick="closeNavbar()">
+            &#x274C
+        </a>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#works">My Works</a>
+        <a href="./Avinash J.docx">Resume</a>
+        <a href="#contact">Contact Me</a>
+    </div>
+
     </header>
 
-    <section id="home" style="background-image: url(./banner.jpeg); background-size: cover; background-position: 0px -170px ;">
-       <h1>Hello!</h1>
-       <h2 style="padding-right: 70% ;">I'm Avinash J</h2>
+    <section id="home" style="background-image: url(./banner.jpeg); background-size: 100% 160%; padding-top: 10%;">
+       <h2>Hello!<br>I'm Avinash J</h2>
     </section>
 
     <section id="about">
@@ -41,7 +53,7 @@
                 <br><br><br><br><a href="./Avinash J.docx">Download CV</a></p>
             </div>
             <div class="right">
-                <img src="./image2.jpeg" alt="Photo">
+                <img src="./image2.jpeg" alt="Photo" style="width: 150%;">
             </div>
         </div>
     </div>
@@ -62,7 +74,7 @@
         </div>
     </section>
 
-    <section id="contact" style="height: 400px;">
+    <section id="contact">
         <h2>Contact Me</h2>
         <form action="#" method="post">
             <label for="name">Name:</label>
@@ -91,14 +103,13 @@
             alert("Thank You for Contacting Me");
         }
         function openNavbar() {
-    document.getElementById("sideNavigationBar")
-        .style.width = "50%";
-}
-function closeNavbar() {
-    document.getElementById("sideNavigationBar")
-        .style.width = "0%";
-}
-
+            document.getElementById("sideNavigationBar")
+            .style.width = "30%";
+        }
+        function closeNavbar() {
+            document.getElementById("sideNavigationBar")
+            .style.width = "0%";
+        }   
     </script>
 </body>
 </html>
